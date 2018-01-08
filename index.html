@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>Train Tracker</title>
+</head>
+<body class="wrapper">
+  <header id='title'>
+    <h1>Train Scheduler</h1>
+  </header>
+  <section>
+    <table id="train-table">
+      <caption>Train Schedule</caption>
+      <tr>
+        <th>Train Name</th>
+        <th>Destination</th>
+        <th>Frequency (min)</th>
+        <th>Next Arrival</th>
+        <th>Minutes Away</th>
+      </tr>
+    </table>
+  </section>
+  <aside>
+    <form id="add-train">
+      <legend>Add Train</legend>
+      <label for="train-name">Train Name</label><br/>
+      <input id="train-name" type="text" name="train-name"><br/>
+      <label for="destination">Destination</label><br>
+      <input id="destination" type="text" name="destination"><br>
+      <label for="first-train-time">
+        First Train Time (HH:mm 24-hour time)
+      </label><br>
+      <input id="first-train-time" type="text" name="first-train-time"><br>
+      <label for="frequency">
+        Frequency (min)
+      </label><br>
+      <input id="frequency" type="number" name="frequency"><br>
+      <input id="submit-button" class="button" type="submit" value="Submit">
+    </form>
+  </aside>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <script
+    src="./assets/moment.js">
+  </script>
+  <script src="./assets/javascript.js"></script>
+  <script src="./assets/style.css"></script>
+</body>
+</html>
